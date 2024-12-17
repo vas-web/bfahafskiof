@@ -1,3 +1,10 @@
+Чтобы адаптировать ваш код для Android-устройств и ПК, можно использовать медиазапросы в CSS, чтобы изменить некоторые стили в зависимости от размера экрана. Это поможет обеспечить лучшее отображение на различных устройствах. 
+
+Я добавлю медиазапросы и изменю некоторые стили, чтобы сделать дизайн более адаптивным.
+
+Вот обновленный код:
+
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,7 +15,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            padding: 200px;
+            padding: 20px; /* Уменьшено для мобильных устройств */
             background-color: #9c2ab3;
         }
 
@@ -46,6 +53,7 @@
         .image {
             max-width: 100%;
             height: auto;
+            margin-bottom: 10px; /* Добавлено для отступа между изображениями */
         }
 
         .button {
@@ -61,6 +69,30 @@
         
         .button:hover {
             background-color: #218838;
+        }
+
+        /* Медиазапрос для экранов шириной менее 600px */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Уменьшено для мобильных устройств */
+            }
+
+            .container {
+                padding: 10px; /* Уменьшено для мобильных устройств */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Уменьшен шрифт заголовка */
+            }
+
+            h2 {
+                font-size: 1.3em; /* Уменьшен шрифт заголовка */
+            }
+
+            .button {
+                width: 100%; /* Кнопки растягиваются на всю ширину */
+                text-align: center; /* Центрирование текста на кнопках */
+            }
         }
     </style>
 </head>
@@ -97,54 +129,11 @@
     <img src="https://steamuserimages-a.akamaihd.net/ugc/2431257546686878552/F32417C2361756A962F9D8734B80CC7A96E22CA4/?imw=512&amp;imh=684&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Пример изображения" class="image">
     <img src="https://i.pinimg.com/originals/8f/a6/aa/8fa6aaabccfa42826a9e94529d4cf83c.jpg" alt="Пример изображения" class="image">
     <img src="https://2ch.hk/a/src/7825838/17336765540161.jpg" alt="Пример изображения" class="image">
-    <img src="" alt="Пример изображения" class="image">
-    <img src="" alt="Пример изображения" class="image">
-    <img src="" alt="Пример изображения" class="image">
-    <img src="" alt="Пример изображения" class="image">
-    <img src="" alt="Пример изображения" class="image">
-    <img src="" alt="Пример изображения" class="image">
+    
     <h2>Кнопки</h2>
     <a href="#" class="button">Нажми меня</a>
 
     <h2>Таблицы</h2>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
-            <tr>
-                <th>Имя</th>
-                <th>Возраст</th>
-                <th>Город</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Иван</td>
-                <td>25</td>
-                <td>Москва</td>
-            </tr>
-            <tr>
-                <td>Мария</td>
-                <td>30</td>
-                <td>Санкт-Петербург</td>
-            </tr>
-            <tr>
-                <td>Алексей</td>
-                <td>22</td>
-                <td>Екатеринбург</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Формы</h2>
-    <form>
-        <label for="name">Имя:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        
-        <input type="submit" value="Отправить" class="button">
-    </form>
-</div>
-
-</body>
-</html>
+            <tr
