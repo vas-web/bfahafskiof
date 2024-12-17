@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрация HTML и CSS элементов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 200px;
+            background-color: #9c2ab3;
+        }
+
+        h1, h2, h3 {
+            color: #d6d332;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #2baabb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgb(167, 12, 167);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .list {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ce3d75;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Демонстрация HTML и CSS элементов</h1>
+
+    <h2>Заголовки</h2>
+    <h3>Это заголовок уровня 3</h3>
+
+    <h2>Параграфы</h2>
+    <p>Это пример обычного параграфа текста. Вы можете использовать его для демонстрации различных стилей текста.</p>
+    <p>Второй параграф текста с <a href="#">гиперссылкой</a>, которая ведет на другую страницу.</p>
+
+    <h2>Списки</h2>
+    <h3>Ненумерованный список:</h3>
+    <ul class="list">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+    </ul>
+
+    <h3>Нумерованный список:</h3>
+    <ol>
+        <li>Первый элемент</li>
+        <li>Второй элемент</li>
+        <li>Третий элемент</li>
+    </ol>
+
+    <h2>Изображения</h2>
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/89352548245191255/BCFDD430736C95DFDADA31C68FF31325D7C5C574/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Пример изображения" class="image">
+    <img src="https://i.pinimg.com/originals/0c/ef/ef/0cefef4224f0f35a3df3372b996a7067.jpg" alt="Пример изображения" class="image">
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/2431257546686878552/F32417C2361756A962F9D8734B80CC7A96E22CA4/?imw=512&amp;imh=684&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Пример изображения" class="image">
+    <img src="https://i.pinimg.com/originals/8f/a6/aa/8fa6aaabccfa42826a9e94529d4cf83c.jpg" alt="Пример изображения" class="image">
+    <img src="https://2ch.hk/a/src/7825838/17336765540161.jpg" alt="Пример изображения" class="image">
+    <img src="" alt="Пример изображения" class="image">
+    <img src="" alt="Пример изображения" class="image">
+    <img src="" alt="Пример изображения" class="image">
+    <img src="" alt="Пример изображения" class="image">
+    <img src="" alt="Пример изображения" class="image">
+    <img src="" alt="Пример изображения" class="image">
+    <h2>Кнопки</h2>
+    <a href="#" class="button">Нажми меня</a>
+
+    <h2>Таблицы</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Возраст</th>
+                <th>Город</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Иван</td>
+                <td>25</td>
+                <td>Москва</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>30</td>
+                <td>Санкт-Петербург</td>
+            </tr>
+            <tr>
+                <td>Алексей</td>
+                <td>22</td>
+                <td>Екатеринбург</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Формы</h2>
+    <form>
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <input type="submit" value="Отправить" class="button">
+    </form>
+</div>
+
+</body>
+</html>
